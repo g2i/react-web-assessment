@@ -1,0 +1,3 @@
+{
+  "filesAllowedToChange": ["src/App.js", "src/App.css"]
+}
