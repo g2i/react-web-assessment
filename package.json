@@ -21,6 +21,7 @@
     "verify": "react-scripts test g2itest --watchAll=false",
     "start": "run-p start:*",
     "start:app": "react-scripts start",
+    "start:server": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
