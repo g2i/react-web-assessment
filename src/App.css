@@ -12,3 +12,37 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.cities {
+  min-height: 90vh;
+}
+
+.city-card {
+  border-width: 1px;
+  background-color: #0b0b40;
+  padding: 20px;
+  min-width: 70%;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.city-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.city-modal > div {
+  width: 80%;
+  height: 80%;
+  margin: 10%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.city-modal > div > img {
+  max-width: 100%;
+  height: auto;
+}
