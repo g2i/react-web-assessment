@@ -15,7 +15,12 @@ const auth = (req, res, next) => {
 };
 
 app.get("/cities", auth, (req, res) => {
-  res.send(mockData);
+  const { search } = req.query;
+  if (search) {
+    res.send(mockData.filter(({ city }) => city.includes(search)));
+  } else {
+    res.send(mockData);
+  }
 });
 
 app.listen(port, () => {
