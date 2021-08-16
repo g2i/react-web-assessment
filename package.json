@@ -19,7 +19,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "verify": "react-scripts test g2itest --watchAll=false --verbose=false --noStackTrace --forceExit",
+    "verify": "react-scripts test g2itest --watchAll=false --verbose=false --noStackTrace --forceExit --reporters='default' --reporters='<rootDir>/g2ijestReporter.js'",
     "start": "run-p start:*",
     "start:app": "react-scripts start",
     "start:server": "node server.js",
@@ -28,8 +28,7 @@
     "eject": "react-scripts eject"
   },
   "jest": {
-    "resetMocks": false,
-    "reporters": ["default", "<rootDir>/g2iJestReporter.js"]
+    "resetMocks": false
   },
   "eslintConfig": {
     "extends": [
