@@ -28,7 +28,8 @@
     "eject": "react-scripts eject"
   },
   "jest": {
-    "resetMocks": false
+    "resetMocks": false,
+    "reporters": ["default", "<rootDir>/g2iJestReporter.js"]
   },
   "eslintConfig": {
     "extends": [
