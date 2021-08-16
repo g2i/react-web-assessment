@@ -2,7 +2,7 @@ function buildSummary(results) {
   let summary = [];
   results.testResults.forEach(({ testResults }) => 
     testResults.forEach((result) => 
-      summary.push(`${result.status === 'passed' ? '?' : '?'} ${result.fullName}`
+      summary.push(`${result.status === 'passed' ? '✓' : '✕'} ${result.fullName}`
       )
     )
   );
