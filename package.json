@@ -19,7 +19,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "verify": "react-scripts test g2itest --watchAll=false --verbose=false --noStackTrace --forceExit --reporters='default' --reporters='<rootDir>/g2ijestReporter.js'",
+    "verify": "react-scripts test g2itest --watchAll=false --verbose=false --noStackTrace --forceExit --reporters='default' --reporters='<rootDir>/node_modules/cli-jest-reporter/index.js'",
     "start": "run-p start:*",
     "start:app": "react-scripts start",
     "start:server": "node server.js",
@@ -49,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "cli-jest-reporter": "https://github.com/g2i/cli-jest-reporter",
     "eslint": "^7.29.0",
     "eslint-plugin-react": "^7.24.0",
     "jest-fetch-mock": "^3.0.3",
